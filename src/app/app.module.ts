@@ -3,16 +3,30 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PageComponent } from './page/page.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ContentService } from './shared/services/content.service';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+
+
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    PageComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+    MatToolbarModule,
+    MatButtonModule,
+    MatCardModule
   ],
-  providers: [],
+  providers: [ContentService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

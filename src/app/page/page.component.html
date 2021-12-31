@@ -1,0 +1,18 @@
+<div class='row' id='cont'>
+    <div class='column'>
+        <h1>{{page.title}}</h1> 
+        <p>{{page.content}}</p>
+    </div>
+    <div class='column'>
+    <div  *ngFor="let image of page.imagesLeft">
+        <img [src]='image'width='100%'/>
+      </div>
+    </div>
+    <div class='column'>
+        <div  *ngFor="let image of page.imagesRight">
+            <img [src]='image'width='100%'padding='100px'/>
+          </div>
+        </div>
+</div>
+
+

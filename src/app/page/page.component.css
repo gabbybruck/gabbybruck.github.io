@@ -1,0 +1,41 @@
+h1 {
+  color: #707070;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-align: right;
+}
+
+p {
+  font-size: 16px;
+  color: #707070;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-align: right;
+}
+
+img {
+  padding: 10px;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  padding: 16px;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 16px;
+}
+
+#cont {
+  width: 95%;
+  margin: 0 auto;
+}
