@@ -9,6 +9,8 @@ import { ContentService } from './shared/services/content.service';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
+import { MatDialogModule } from '@angular/material/dialog';
+import { PopupComponent } from './popup/popup.component';
 
 
 
@@ -16,6 +18,7 @@ import { MatCardModule } from '@angular/material/card';
   declarations: [
     AppComponent,
     PageComponent,
+    PopupComponent,
   ],
   imports: [
     BrowserModule,
@@ -24,7 +27,8 @@ import { MatCardModule } from '@angular/material/card';
     AppRoutingModule,
     MatToolbarModule,
     MatButtonModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule 
   ],
   providers: [ContentService],
   bootstrap: [AppComponent]

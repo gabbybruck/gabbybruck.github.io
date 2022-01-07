@@ -14,7 +14,7 @@
     </div>
     <div class='column'>
         <div  *ngFor="let image of page.imagesRight">
-            <img [src]='image'width='100%'padding='100px'/>
+            <img (click)="openDialog()" [src]='image'width='100%'padding='100px'/>
         </div>
     </div>
 </div>

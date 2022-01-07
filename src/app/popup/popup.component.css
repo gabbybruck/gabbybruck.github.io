@@ -1,0 +1,41 @@
+h1 {
+  color: #707070;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+p {
+  font-size: 16px;
+  color: #707070;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 300;
+  text-align: left;
+}
+
+.holder {
+  width: 100%;
+  display: flex;
+}
+.content {
+  background: rgb(241, 241, 241);
+  padding: 28px 26px 33px 25px;
+  width: 90%;
+  height: 80%;
+  border-radius: 15px;
+  align-self: center;
+}
+.popup {
+  border-radius: 10px;
+  background: rgb(241, 241, 241);
+  margin: 30px auto 0;
+  padding: 6px;
+  position: fixed;
+  width: 60%;
+  height: 50%;
+  top: 50%;
+  left: 20%;
+  margin-top: -200px;
+}

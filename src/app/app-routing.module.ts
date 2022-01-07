@@ -8,8 +8,8 @@ const routes: Routes = [
   {path: 'home', component: PageComponent, data: {
     page: 'home'
   }},
-  {path: 'ux/ui', component: PageComponent, data: {
-    page: 'ux/ui'
+  {path: 'projects', component: PageComponent, data: {
+    page: 'projects'
   }},
   {path: 'illustration', component: PageComponent, data: {
     page: 'illustration'
