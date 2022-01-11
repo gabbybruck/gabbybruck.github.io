@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDialogModule } from '@angular/material/dialog';
 import { PopupComponent } from './popup/popup.component';
+import { ProjectComponent } from './project/project.component';
 
 
 
@@ -19,6 +20,7 @@ import { PopupComponent } from './popup/popup.component';
     AppComponent,
     PageComponent,
     PopupComponent,
+    ProjectComponent,
   ],
   imports: [
     BrowserModule,

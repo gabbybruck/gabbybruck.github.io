@@ -8,8 +8,11 @@
     </div>
     <div class='scroll-row'>
     <div class='column'>
+        <app-project></app-project>
+    </div>
+    <div class='column'>
         <div  *ngFor="let image of page.imagesLeft">
-            <img [src]='image'width='100%'/>
+            <img (click)="openDialog()" [src]='image'width='100%'/>
         </div>
     </div>
     <div class='column'>

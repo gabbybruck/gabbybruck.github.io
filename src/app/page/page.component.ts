@@ -34,9 +34,12 @@ export class PageComponent implements OnInit {
   }
 
   openDialog(){
-    this.dialogRef.open(PopupComponent,{});
+    this.dialogRef.open(PopupComponent,{
     data : {
-      text : "gabby"
+      text : this.page.title
     }
+  });
   }
+
+
 }

@@ -1,0 +1,9 @@
+<ul *ngFor="let project of projects">
+  <li (click)=openDialog(project)>
+    <img [src]=project.cover />
+    <h2>{{project.title}}</h2> 
+    <p>{{project.subtitle}}</p>
+  </li>
+</ul>
+
+
