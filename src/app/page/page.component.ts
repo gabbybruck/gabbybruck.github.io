@@ -23,6 +23,8 @@ import { PopupComponent } from '../popup/popup.component';
 })
 export class PageComponent implements OnInit {
   page: any;
+  links: any;
+  linkTitles: any;
 
   constructor(private route: ActivatedRoute,
     private contentService: ContentService,
@@ -31,6 +33,8 @@ export class PageComponent implements OnInit {
   ngOnInit() {
     const pageData = this.route.snapshot.data['page'];
     this.page = this.contentService.pages[pageData];
+    this.links = this.page.links;
+    this.linkTitles = this.page.linkTitles;
   }
 
   openDialog(){

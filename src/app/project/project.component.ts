@@ -12,7 +12,8 @@ import { Project } from './project';
 })
 export class ProjectComponent implements OnInit {
 
-  projects: any;
+  projectsL: any;
+  projectsR: any;
 
   constructor(private route: ActivatedRoute,private contentService: ContentService,
     private dialogRef : MatDialog) {
@@ -21,7 +22,9 @@ export class ProjectComponent implements OnInit {
   ngOnInit() {
     const curPage = this.route.snapshot.data['page'];
     const pageData = this.contentService.pages[curPage];
-    this.projects = pageData.projects;
+    this.projectsL = pageData.projectsL;
+    this.projectsR = pageData.projectsR;
+
   
   }
 

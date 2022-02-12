@@ -1,22 +1,14 @@
-<div class='navbar'>
-<mat-toolbar color="primary">
-  <span class="spacer"></span> 
-  <a mat-button
-[routerLink]="['home']"
-routerLinkActive="active">HOME</a>
-<a mat-button
-[routerLink]="['illustration']"
-routerLinkActive="active">ILLUSTRATION</a>
-<a mat-button
-[routerLink]="['projects']"
-routerLinkActive="active">PROJECTS</a>
-<a mat-button
-[routerLink]="['about']"
-routerLinkActive="active">ABOUT</a>
-<a mat-button
-[routerLink]="['contact']"
-routerLinkActive="active">CONTACT</a>
-</mat-toolbar>
+<div class="navbar">
+  <mat-toolbar color="primary">
+    <span class="spacer"></span>
+    <a mat-button [routerLink]="['home']" routerLinkActive="active">HOME</a>
+    <a mat-button [routerLink]="['projects']" routerLinkActive="active"
+      >PROJECTS</a
+    >
+    <a mat-button [routerLink]="['illustration']" routerLinkActive="active"
+      >ILLUSTRATION</a
+    >
+  </mat-toolbar>
 </div>
 
 <router-outlet></router-outlet>

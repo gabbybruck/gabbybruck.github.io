@@ -1,26 +1,25 @@
-<div class='row' id='cont'>
-    <div class='sticky'>
-        <div class='logo'>
-            <img src={{page.logo}} width='13%'/>
-        </div>
-        <h1>{{page.title}}</h1> 
-        <p>{{page.content}}</p>
+<div class="row" id="cont">
+  <div class="sticky">
+    <h1>{{ page.title }}</h1>
+    <p>{{ page.content }}</p>
+    <div>
+      <ul
+        *ngFor="let link of links; let i = index"
+        [attr.data-index]="i"
+        style="list-style-type: none"
+      >
+        <li class="contact">
+          <a href="{{ link }}">{{ linkTitles[i] }}</a>
+        </li>
+      </ul>
     </div>
-    <div class='scroll-row'>
-    <div class='column'>
-        <app-project></app-project>
+  </div>
+  <div class="scroll-row">
+    <div class="column">
+      <app-project></app-project>
     </div>
-    <div class='column'>
-        <div  *ngFor="let image of page.imagesLeft">
-            <img (click)="openDialog()" [src]='image'width='100%'/>
-        </div>
-    </div>
-    <div class='column'>
-        <div  *ngFor="let image of page.imagesRight">
-            <img (click)="openDialog()" [src]='image'width='100%'padding='100px'/>
-        </div>
-    </div>
+  </div>
+  <div class="pfp">
+    <img [src]="page.image" width="60%" border-radius="50px" />
+  </div>
 </div>
-</div>
-
-

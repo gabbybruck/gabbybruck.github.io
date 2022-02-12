@@ -1,14 +1,14 @@
-
-<div class="holder">     
-    <div id="popup" class="popup">            
-        <div class="content">
-            <button (click)="closeDialog()">x</button>
-            <h1>{{data.title}}</h1>
-            <p> {{data.details}}</p>
-            <div  *ngFor="let image of images">
-                <img [src]='image'width='100%'/>
-            </div>
-            
+<div class="holder">
+  <div id="popup" class="popup">
+    <div class="content">
+      <button class="button" (click)="closeDialog()">X</button>
+      <div class="row">
+        <div *ngFor="let image of images">
+          <img [src]="image" />
         </div>
+      </div>
+      <h1>{{ data.title }}</h1>
+      <p>{{ data.details }}</p>
     </div>
+  </div>
 </div>
