@@ -1,6 +1,6 @@
 img {
   padding: 10px;
-  width: 110%;
+  width: 100%;
   cursor: pointer;
 }
 
@@ -11,6 +11,7 @@ h2 {
   font-weight: 100;
   font-size: 16px;
   text-align: center;
+  cursor: pointer;
 }
 
 p {
@@ -42,4 +43,12 @@ p {
   width: 95%;
   margin: 0 auto;
   padding-top: 40px;
+}
+
+.title:hover {
+  color: #16b978;
+}
+.title {
+  border-radius: 20px;
+  padding: 10px;
 }

@@ -16,8 +16,8 @@ a {
 #navitem {
   color: #16b978;
 }
-#navitem:hover {
-  text-decoration: underline;
+.navitem a:hover {
+  text-decoration-line: line-through;
 }
 
 .active {

@@ -1,9 +1,9 @@
 <div class="row" id="cont">
   <div class="column">
     <ul *ngFor="let project of projectsL" style="list-style-type: none">
-      <li (click)="openDialog(project)">
+      <li (click)="openDialog(project)" class="project">
         <img [src]="project.cover" />
-        <h2>
+        <h2 class="title">
           <b>{{ project.title }} </b>{{ project.subtitle }}
         </h2>
       </li>
@@ -13,7 +13,7 @@
     <ul *ngFor="let project of projectsR" style="list-style-type: none">
       <li (click)="openDialog(project)">
         <img [src]="project.cover" />
-        <h2>
+        <h2 class="title">
           <b>{{ project.title }} </b>{{ project.subtitle }}
         </h2>
       </li>

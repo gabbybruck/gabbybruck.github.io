@@ -7,6 +7,15 @@ h1 {
   padding-top: 100px;
 }
 
+h2 {
+  color: #16b978;
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue",
+    Helvetica, Arial, "Lucida Grande", sans-serif;
+  font-weight: 100;
+  text-align: right;
+  padding-top: 20px;
+}
+
 p {
   font-size: 16px;
   color: #707070;
@@ -29,9 +38,9 @@ a {
   text-decoration: none;
   color: #707070;
 }
-.contact:hover {
+.contact a:hover {
   text-decoration: underline;
-  color: rgb(87, 133, 87);
+  color: #16b978;
 }
 
 a:visited {
