@@ -8,7 +8,7 @@ import { MatDialog } from '@angular/material/dialog';
 export class ContentService {
   pages: any = {
     'about': {title: 'Home', subtitle: 'Welcome Home!', content: 'Some home content.', images:[],logo:'assets/gb-logo.png'},
-    'illustration': {title: 'ILLUSTRATION', subtitle: 'Welcome Home!', content: '', 
+    'illustration': {title: 'ILLUSTRATIONS', content: 'A collection of some of my recent illustrations.', subtitle: 'Welcome Home!', 
     projectsL:[
       {cover:'assets/hands.jpg', details: 'Bridge - Gouache', detailPhotos:['assets/hands.jpg']},
       {cover:'assets/purple.jpg', details: 'Allie - Digital', detailPhotos:['assets/purple.jpg']},
@@ -25,7 +25,7 @@ export class ContentService {
       {cover:'assets/rihanna.jpg', details: 'Rihanna - Digital', detailPhotos:['assets/rihanna.jpg']},],
       logo:'assets/gb-logo.png'},
 
-    'projects': {title: 'PROJECTS', subtitle: 'Welcome Home!', content: 'Here are some past and present projects I am working on!',  logo:'assets/gb-logo.png',
+    'projects': {title: 'PROJECTS', subtitle: 'Welcome Home!', content: 'Some past and present projects I am working on.',  logo:'assets/gb-logo.png',
     projectsL:[
       {title: 'Salutemp Companion App', subtitle: 'Mobile Development & UX/UI Design - React Native/Objective C', cover: 'assets/salutemp-logo-circle.png',details: 'Salutemp is a new venture working to develop a temperature-sensing device that will provide patients with alerts as well as drug facts, enabling them to safely store and use their medicines. I worked on designing and implementing a React Native mobile companion app to help users monitor temperature-sensitive medicine. I worked collaboratively on the full-stack application by designing REST API endpoints and implementing features. I also developed a user-friendly setup process that interfaced with hardware devices and created a usable and engaging mobile experience through the design and iteration of wireframes, interfaces, and interactions. We collected & analyzed user feedback from 10 individuals by deploying app to the Google Play Store and coordinating users for alpha testing.', detailPhotos: ['assets/sal_1.png', 'assets/sal_2.png', 'assets/sal_3.png']},
       {title: 'Easy Animator', subtitle: 'Animation Software - Java/Java Swing', cover: 'assets/interactive-screenshot.png',details: 'As a project for Northeastern’s Object-Oriented Design course I created an animation software with a partner using Java and Java Swing. We designed the software using the Model/View/Controller pattern. The software accepts animation instructions in text format and supports several views: a visual animation, SVG format, and text format. Additionally the interface for the software supports user interaction through customizable playback. ', detailPhotos: ['assets/interactive-screenshot.png']},
@@ -39,7 +39,7 @@ export class ContentService {
     ]},
 
     
-    'home': {title: 'About', subtitle: 'Contact Me', content: 'Hi! My name is Gabby Bruck and I am a Computer Science and Experience Design Major at Northeastern University in Boston, MA. My interests include software design and development and designing accessible user centric experiences. When I’m not working I enjoy drawing and painting which I’ve included on my website as well! ', linkTitles:['bruck.g@northeastern.edu', 'GitHub', 'LinkedIn'], links:['mailto: bruck.g@northeastern.edu', 'https://github.com/gabbybruck', 'https://www.linkedin.com/in/gabrielle-bruck-430a3a159/'], 
+    'home': {title: 'ABOUT', subtitle: 'Contact Me', content: 'Hi! My name is Gabby Bruck and I am a Computer Science and Experience Design Major at Northeastern University in Boston, MA. My interests include software design and development and designing accessible user centric experiences. When I’m not working I enjoy drawing and painting which I’ve included on my website as well! ', linkTitles:['bruck.g@northeastern.edu', 'GitHub', 'LinkedIn'], links:['mailto: bruck.g@northeastern.edu', 'https://github.com/gabbybruck', 'https://www.linkedin.com/in/gabrielle-bruck-430a3a159/'], 
     image:'assets/profile2.jpg',logo:'assets/gb-logo.png'}
   };
 
